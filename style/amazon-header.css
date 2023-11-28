@@ -18,6 +18,12 @@ header {
   margin-left: 15px;
 }
 
+.logo a img:hover {
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 2px;
+}
+
 .amazon-search {
   display: flex;
   align-items: center;
@@ -60,14 +66,33 @@ header {
   color: white;
 }
 
+.amazon-cart {
+  position: relative;
+}
+
 .amazon-cart img {
   width: 50px;
+}
+
+.amazon-cart .cart-quantity {
+  position: absolute;
+  top: -3px;
+  left: 28%;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(240, 136, 4);
 }
 
 .amazon-cart .cart-txt {
   color: white;
   font-size: 18px;
   font-weight: 600;
+}
+
+.return-order:hover,
+.amazon-cart:hover {
+  border: 2px solid white;
+  border-radius: 4px;
 }
 
 /* media-query for mobile devices*/
@@ -134,6 +159,15 @@ header {
     display: flex;
     align-items: center;
   }
+
+  .amazon-cart .cart-quantity {
+  position: absolute;
+  top: -6px;
+  left: 26%;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(240, 136, 4);
+}
 
   .right-side .amazon-cart img {
     width: 100%;
